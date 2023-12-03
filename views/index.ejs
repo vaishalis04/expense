@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link
+            href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+            rel="stylesheet"
+        />
+</head>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #0A0A0C;
+}
+
+body {
+    font-family: "montserrat";
+    color: white;
+    background-image: url(https://images.unsplash.com/photo-1516331138075-f3adc1e149cd?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDR8fHNvbGFyJTIwc3lzdGVtfGVufDB8fDB8fHww);
+    /* background-image: url(https://i.pinimg.com/236x/76/10/42/761042ec87b2ed2f269120c99edec609.jpg); */
+    /* background-image: url(https://i.pinimg.com/236x/a5/21/6f/a5216f25e94a64bca97226e94ac22383.jpg); */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container1 {
+    width: 100%;
+    height: 100%;
+    
+}
+
+.nav {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3vmax 10vmax;
+    font-weight: 500;
+}
+
+.logo > i {
+    color: tomato;
+    font-size: 2vmax;
+}
+
+.container1 > .content {
+    width: 100%;
+    height: 50vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.container1 > .content > h1 {
+    font-size: 5vmax;
+}
+
+.container1 > .content > p {
+    font-size: 2vmax;
+    margin-top: 1vmax;
+}
+
+.container1 > .circle {
+    width: 5vmax;
+    height: 5vmax;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container1 > .circle > i {
+    font-size: 2vmax;
+}
+
+.nav > span {
+    display: none;
+}
+.container2 {
+    width: 80%;
+    height: 100vh;
+    margin: auto;
+    padding: 2vmax 0;
+    text-align: center;
+   
+}
+.container2 > h1{
+    text-align: center;
+    color: #ffff;
+    margin-bottom: 2vh;
+}
+.container2 > p{
+   color: #ffff;
+   margin-bottom: 10vh;
+  
+}
+.cards{
+    display: flex;
+    align-self: center;
+    /* background-color: aqua; */
+    justify-content: space-between;
+    
+    
+}
+
+.card {
+    width: 32%;
+    height: 55vh;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+
+}
+
+.c1-img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    background-image: url(https://images.unsplash.com/photo-1614029655965-2464911905a4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjZ8fGV4cGVuc2UlMjBtYW5hZ2VtZW50fGVufDB8fDB8fHww);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 0.5s all;
+}
+
+.card:hover .c1-img {
+    transform: scale(1.2);
+}
+.c2-img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    background-image: url(https://media.istockphoto.com/id/1151082706/photo/online-recruitment.webp?s=170667a&w=0&k=20&c=8fwZ6COwzRzZhabf5mhtTMVEtU_N82bOraW4bqhCtUk=);
+    /* background-image: url(https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Zm9vZHxlbnwwfHwwfHx8MA%3D%3D); */
+    /* background-image: url(https://images.unsplash.com/photo-1685455224390-6d405a291a6c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 0.5s all;
+}
+
+.card:hover .c2-img {
+    transform: scale(1.2);
+}
+.c3-img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    background-image: url(https://plus.unsplash.com/premium_photo-1681487769650-a0c3fbaed85a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE2fHx8ZW58MHx8fHx8);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 0.5s all;
+}
+
+.card:hover .c3-img {
+    transform: scale(1.2);
+}
+.see{
+    text-align: center;
+}
+.container3 {
+    width: 80%;
+    height: 100vh;
+    margin: auto;
+    padding: 2vmax 0;
+    text-align: center;
+   
+}
+.container3 > h1{
+    text-align: center;
+    color: #ffff;
+    margin-bottom: 2vh;
+}
+.container3 > p{
+   color: #ffff;
+   margin-bottom: 10vh;
+  
+}
+.p3-cards{
+    display: flex;
+    align-self: center;
+    flex-direction: row;
+    /* background-color: aqua; */
+    justify-content: space-between;
+   
+}
+.p3left,.p3right{
+    display: flex;
+    flex-direction: column;
+}
+.p3-card {
+    width: 37vw;
+    height: 50vh;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.c1-img1 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    background-image: url(https://images.unsplash.com/photo-1601597111158-2fceff292cdc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YXRtfGVufDB8fDB8fHww);
+    /* background-image: url(https://images.unsplash.com/photo-1601895905331-5c877f444583?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 0.5s all;
+}
+
+.p3-card:hover .c1-img {
+    transform: scale(1.2);
+}
+.c2-img2 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    background-image: url(https://images.unsplash.com/photo-1612795459707-1002f77720d2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjR8fGF0bXxlbnwwfHwwfHx8MA%3D%3D);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 0.5s all;
+}
+
+.p3-card:hover .c2-img {
+    transform: scale(1.2);
+}
+
+.content1{
+    
+width: 50%;
+}
+.content2{
+   
+    width: 50%;
+    }
+    
+    .photo> img{
+        /* padding-top: 5vh; */
+        width: 100%;
+        height: 85vh;
+        background-image: url(https://i.pinimg.com/564x/8c/95/f2/8c95f2896956544d4a806ed071dc9ae4.jpg);
+        /* background-image: url(https://images.unsplash.com/photo-1512358958014-b651a7ee1773?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzB8fG1vbmV5JTIwbWFuYWdlbWVudHxlbnwwfHwwfHx8MA%3D%3D); */
+        /* background-image: url(https://plus.unsplash.com/premium_photo-1669885054220-4830e1d9ac7d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=907&q=80); */
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+    }
+    
+.footer > ul {
+    list-style: none;
+    width: 50%;
+    display: flex;
+    /* justify-content: space-between; */
+    text-align: center;
+    align-items: center;
+    padding: 1vmax 2vmax;
+    font-weight: 300;
+    gap: 10vh;
+    font-size: 70%;
+    margin-left: 45vh;
+   
+}
+
+@media (max-width: 600px) {
+    .nav {
+        justify-content: end;
+        font-size: 3vmax;
+    }
+    .nav > span {
+        display: initial;
+    }
+    .container1 > .nav > li {
+        display: none;
+    }
+
+    .container1 > .content {
+        height: 70vmax;
+    }
+    .cards{
+        display: block;
+      
+    }
+    .card{
+        width: 50vh;
+        margin-bottom: 5vh;
+    }
+    .see{
+        margin-top: 120vh;
+        text-align: center;
+    }
+    .p3-cards{
+        display: block;
+    }
+    .p3-contents {
+        
+        display: block;
+    }
+    .p3-card{
+        width: 50vh;
+        margin-bottom: 5vh;
+    }
+    .content1{
+        width: 50vh;
+        margin-bottom: 5vh;
+    }
+    .content2{
+        width: 60vh;
+    }
+    .card1,.card2, .card3{
+        margin-left: 50px;
+    }
+    .p3-card1,  .p3-card2{
+        margin-left: 50px;
+
+    }
+    .post{
+        margin-top: 90vh;
+        text-align: center;
+    }
+    .photo{
+        padding-top: 50%;
+    }
+    .footer > ul{
+ 
+        margin-left: -19vh;
+        font-size: 65%;
+    }
+
+}
+
+</style>
+<body>
+  <%- include('partials/nav') %>
+
+  
+        
+    </head>
+    <body>
+        <div class="container1">
+            <!-- <ul class="nav">
+                <li>About</li>
+                <li>Explore</li>
+                <li class="logo"><i class="ri-map-pin-fill"></i></li>
+                <li>Journal</li>
+                <li class="search">Search <i class="ri-search-line"></i></li>
+
+                <span><i class="ri-menu-line"></i></span>
+            </ul> -->
+
+            <div class="content">
+                <h1>Earn.Save.Spend.</h1>
+                <p>For a happy life, money is required.</p>
+            </div>
+            <!-- <div class="circle">
+                <i class="ri-play-fill"></i>
+            </div> -->
+        </div>
+        <div class="container2">
+            <h1>Manage Your Money</h1>
+           <p>A Budget Is Telling Your Money Where To Go, Instead Of Wondering Where It Went</p>
+<div class="cards">
+<div class="card card1">
+                <div class="c1-img"></div>
+                <!-- <h2>Explore new places</h2>
+                <p>Never spend your money before you have it.</p> -->
+               
+            </div>
+            <div class="card card2">
+                <div class="c2-img"></div>
+                <!-- <h2>Explore New dishes</h2>
+                <p>Lorem ipsum dolor sit amet.</p> -->
+               
+            </div>
+            <div class="card card3">
+                <div class="c3-img"></div>
+                <!-- <h2>Lorem, ipsum dolor.</h2>
+                <p>Lorem ipsum dolor sit amet.</p> -->
+               
+            </div>
+        </div>
+    </div>
+    <div class="see">
+    <a href="">SEE MORE</a>
+</div>
+<div class="container3">
+    <h1>The Journal</h1>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat<br> ratione impedit molestiae earum soluta voluptate aspernatur asperiores cumque reiciendis aliquam<br> tenetur beatae accusamus, minima maxime sunt doloribus, provident suscipit inventore!x`</p>            
+<div class="p3-cards">
+    <div class="p3left">
+<div class="p3-card p3-card1">
+        <div class="c1-img1"></div>
+        
+    </div>
+    <div class="p3-contents">
+        <!-- <div class="content1">
+            <p>MAY 30 2017</p>
+            <h2>An Unforgettable</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Accusantium repudiandae pariatur ab minus </p>
+        </div> -->
+    </div>
+    </div>
+    <div class="p3right">
+    <div class="p3-card p3-card2">
+        
+        <div class="c2-img2"></div>
+        
+       
+    </div>
+    
+
+
+    <!-- <div class="content2">
+        <p>MAY 30 2017</p>
+        <h2>An Unforgettable</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>  Accusantium repudiandae pariatur ab minus </p>
+    </div> -->
+</div>
+</div>
+</div>
+
+
+<div class="photo">
+    <img src="https://i.pinimg.com/564x/8c/95/f2/8c95f2896956544d4a806ed071dc9ae4.jpg" alt="">
+    <!-- <img src="https://images.unsplash.com/photo-1611224885990-ab7363d1f2a9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjN8fGV4cGVuc2UlMjBtYW5hZ2VtZW50fGVufDB8fDB8fHww" alt=""> -->
+    <!-- <img src="https://images.unsplash.com/photo-1627719172031-ab42dc849bc3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDh8fGV4cGVuc2UlMjBtYW5hZ2VtZW50fGVufDB8fDB8fHww" alt=""> -->
+</div>
+<div class="footer">
+    <ul>
+        <li>Expense Tracker</li>
+        <li>ABOUT</li>
+        <li>EXPLORE</li>
+        <li>JOURNAL</li>
+        <li>SEARCH</li>
+
+        
+    </ul>
+</div>
+
+    </body>
+</html>
+
+
+   
